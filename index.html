@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GAMEZONE</div>
+
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+<button class="theme-button" id="themeButton" onclick="toggleTheme()">☀</button>
+<button class="language-button" id="languageButton" onclick="toggleLanguage()">
+    EN
+</button>
+<nav id="menu">
+    <a href="#" data-ru="Главная" data-en="Home">Главная</a>
+    <a href="#players" data-ru="Игроки" data-en="Players">Игроки</a>
+    <a href="#about" data-ru="О нас" data-en="About">О нас</a>
+    <a href="#news" data-ru="Новости" data-en="News">Новости</a>
+    <a href="#contacts" data-ru="Контакты" data-en="Contacts">Контакты</a>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+    <div class="hero-content">
+
+        <div class="badge">
+            ESPORTS TEAM
+        </div>
+
+        <h1>
+            ИГРАЙ.<br>
+            ПОБЕЖДАЙ.<br>
+            ДОМИНИРУЙ.
+        </h1>
+
+        <p>
+            GAMEZONE — игровая команда,
+            которая объединяет игроков,
+            соревнования и лучшие моменты.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#players"
+   class="button"
+   data-ru="Наша команда"
+   data-en="Our Team">
+   Наша команда
+</a>
+
+<a href="#contacts"
+   class="button secondary"
+   data-ru="Связаться"
+   data-en="Contact Us">
+   Связаться
+</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="players" id="players">
+<div class="player-search">
+    <input
+        type="text"
+        id="playerSearch"
+        placeholder="🔎 Найти игрока..."
+    >
+</div>
+<div class="player-sort">
+    <select id="playerSort">
+        <option value="default">Сортировка</option>
+        <option value="winRate">По Win Rate</option>
+        <option value="kd">По K/D</option>
+    </select>
+</div>
+    <h2>Наши игроки</h2>
+
+    <div class="cards">
+
+    <div class="card">
+        <div class="player-number">01</div>
+        <div class="avatar">
+            <img src="images/player1.jpg" alt="PlayerOne">
+        </div>
+        <h3>PlayerOne</h3>
+        <p class="role">ENTRY FRAGGER</p>
+        <div class="player-stats">
+            <span>WIN RATE <b>87%</b></span>
+            <span>K/D <b>1.42</b></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="player-number">02</div>
+        <div class="avatar">
+            <img src="images/player2.jpg" alt="Shadow">
+        </div>
+        <h3>Shadow</h3>
+        <p class="role">SNIPER</p>
+        <div class="player-stats">
+            <span>WIN RATE <b>91%</b></span>
+            <span>K/D <b>1.67</b></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="player-number">03</div>
+        <div class="avatar">
+            <img src="images/player3.jpg" alt="Night">
+        </div>
+        <h3>Night</h3>
+        <p class="role">SUPPORT</p>
+        <div class="player-stats">
+            <span>WIN RATE <b>84%</b></span>
+            <span>K/D <b>1.31</b></span>
+        </div>
+    </div>
+
+</div>
+
+</section>
+<section class="about" id="about">
+    <div class="about-content">
+        <div class="about-label">О КОМАНДЕ</div>
+
+        <h2>GAMEZONE — ЭТО БОЛЬШЕ, ЧЕМ ИГРА</h2>
+
+        <p>
+            Мы объединяем игроков, которые любят соревноваться,
+            развиваться и побеждать. Тренировки, турниры,
+            командная работа и постоянное улучшение — наш главный принцип.
+        </p>
+
+        <div class="about-features">
+            <div>
+                <strong>01</strong>
+                <span>Командная игра</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Турниры</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Развитие</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news" id="news">
+
+    <div class="news-header">
+        <div>
+            <div class="about-label">ПОСЛЕДНИЕ СОБЫТИЯ</div>
+            <h2>НОВОСТИ GAMEZONE</h2>
+        </div>
+    </div>
+
+   <div class="news-grid" id="newsGrid">
+
+    <article class="news-card">
+        <div class="news-date">03 ОКТЯБРЯ 2026</div>
+        <h3>GameZone выходит на новый турнир</h3>
+        <p>
+            Наша команда готовится к новому соревнованию
+            и уже начала подготовку к матчам.
+        </p>
+        <a href="news.html" class="news-link">Подробнее →</a>
+    </article>
+
+    <article class="news-card">
+        <div class="news-date">28 СЕНТЯБРЯ 2026</div>
+        <h3>Новый игрок в составе</h3>
+        <p>
+            К команде присоединился новый участник.
+            Желаем ему успешных матчей вместе с GameZone!
+        </p>
+        <a href="news2.html" class="news-link">Подробнее →</a>
+    </article>
+
+    <article class="news-card">
+        <div class="news-date">20 СЕНТЯБРЯ 2026</div>
+        <h3>Новая серия тренировок</h3>
+        <p>
+            Команда начала новый тренировочный цикл
+            для подготовки к будущим турнирам.
+        </p>
+        <a href="news3.html" class="news-link">Подробнее →</a>
+    </article>
+
+</div>
+
+</section>
+<section class="contacts" id="contacts">
+    <div class="contacts-content">
+
+        <div class="about-label">КОНТАКТЫ</div>
+
+        <h2>ХОЧЕШЬ К НАМ?</h2>
+
+        <p>
+            Напиши нам, если хочешь присоединиться к команде,
+            предложить сотрудничество или узнать больше о GameZone.
+        </p>
+
+        <div class="contact-buttons">
+            <form class="contact-form" id="contactForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Ваше имя"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Ваш Email"
+        required
+    >
+
+    <textarea
+        id="message"
+        placeholder="Ваше сообщение"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit" class="button">
+        Отправить сообщение
+    </button>
+
+    <p id="formMessage"></p>
+
+</form>
+        </div>
+
+    </div>
+</section>
+<div class="modal" id="playerModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" onclick="closePlayerModal()">×</button>
+
+        <div class="modal-avatar" id="modalAvatar">
+            P1
+        </div>
+
+        <h2 id="modalName">PlayerOne</h2>
+
+        <p id="modalRole">ENTRY FRAGGER</p>
+
+        <div class="modal-stats">
+            <div>
+                <strong id="modalWinRate">87%</strong>
+                <span>WIN RATE</span>
+            </div>
+
+            <div>
+                <strong id="modalKD">1.42</strong>
+                <span>K/D</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<footer>
+    <div class="logo">GAMEZONE</div>
+
+    <p>© 2026 GameZone. Все права защищены.</p>
+</footer>
+<section class="stats">
+
+    <div class="stat">
+        <strong class="counter" data-target="25">0</strong>
+        <span>Турниров</span>
+    </div>
+
+    <div class="stat">
+        <strong class="counter" data-target="12">0</strong>
+        <span>Игроков</span>
+    </div>
+
+    <div class="stat">
+        <strong class="counter" data-target="87">0%</strong>
+        <span>Побед</span>
+    </div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>

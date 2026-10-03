@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone — Админ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GAMEZONE</div>
+
+    <nav>
+    <a href="index.html">Главная</a>
+    <a href="index.html#players">Игроки</a>
+    <a href="index.html#news">Новости</a>
+
+    <button class="logout-button" onclick="logout()">
+        Выйти
+    </button>
+</nav>
+</header>
+
+
+<main class="admin">
+
+    <div class="about-label">ADMIN PANEL</div>
+
+    <h1>Управление новостями</h1>
+
+    <p class="admin-description">
+        Здесь можно добавить новую новость на сайт.
+    </p>
+    <div class="admin-stat">
+    <span>НОВОСТЕЙ ОПУБЛИКОВАНО</span>
+    <strong id="newsCount">0</strong>
+</div>
+
+
+    <form id="newsForm" class="admin-form">
+
+        <input
+            type="text"
+            id="newsTitle"
+            placeholder="Название новости"
+            required
+        >
+
+        <input
+            type="text"
+            id="newsDate"
+            placeholder="Дата, например: 03 ОКТЯБРЯ 2026"
+            required
+        >
+
+        <textarea
+            id="newsText"
+            rows="6"
+            placeholder="Текст новости"
+            required
+        ></textarea>
+
+        <button type="submit" class="button">
+            Добавить новость
+        </button>
+
+        <p id="adminMessage"></p>
+        <h2 class="admin-news-title">Добавленные новости</h2>
+
+        <div id="adminNewsList" class="admin-news-list"></div>
+
+    </form>
+
+</main>
+
+
+<footer>
+    <div class="logo">GAMEZONE</div>
+    <p>© 2026 GameZone. Все права защищены.</p>
+</footer>
+
+
+<script src="admin.js"></script>
+
+</body>
+</html>

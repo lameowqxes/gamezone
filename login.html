@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone — Вход</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GAMEZONE</div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+    </nav>
+</header>
+
+
+<main class="login">
+
+    <div class="about-label">ADMIN PANEL</div>
+
+    <h1>Вход в админку</h1>
+
+    <p>Введите данные администратора.</p>
+
+    <form id="loginForm" class="login-form">
+
+        <input
+            type="text"
+            id="login"
+            placeholder="Логин"
+            required
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Пароль"
+            required
+        >
+
+        <button type="submit" class="button">
+            Войти
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </form>
+
+</main>
+
+
+<footer>
+    <div class="logo">GAMEZONE</div>
+    <p>© 2026 GameZone. Все права защищены.</p>
+</footer>
+
+
+<script src="login.js"></script>
+
+</body>
+</html>
